@@ -82,6 +82,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HMSDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Items.cs" />
     <Compile Include="loginUser.cs" />
     <Compile Include="My Project\MyNamespace.Dynamic.Designer.cs" />
     <Compile Include="My Project\MyNamespace.Static.1.Designer.cs" />

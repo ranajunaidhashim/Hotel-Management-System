@@ -10,8 +10,9 @@ namespace EProject
 /// </summary>
     public partial class Mainform
     {/// <summary>
-    /// 
-    /// </summary>
+     /// 
+     /// </summary>
+     /// 
         public Mainform()
         {
             InitializeComponent();
@@ -29,11 +30,12 @@ namespace EProject
             this.RestaurantInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CurrencyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CategoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.UserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.CustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BilingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ReportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,14 +43,12 @@ namespace EProject
             this.CalculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NotepadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuStrip1
             // 
-            this.MenuStrip1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.MenuStrip1, "MenuStrip1");
             this.MenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.EntryToolStripMenuItem,
             this.UserToolStripMenuItem,
@@ -57,11 +57,7 @@ namespace EProject
             this.ReportsToolStripMenuItem,
             this.ToolsToolStripMenuItem,
             this.ExitToolStripMenuItem});
-            this.MenuStrip1.Location = new System.Drawing.Point(0, 0);
             this.MenuStrip1.Name = "MenuStrip1";
-            this.MenuStrip1.Size = new System.Drawing.Size(1028, 28);
-            this.MenuStrip1.TabIndex = 0;
-            this.MenuStrip1.Text = "MenuStrip1";
             // 
             // EntryToolStripMenuItem
             // 
@@ -69,40 +65,27 @@ namespace EProject
             this.EntryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.RestaurantInfoToolStripMenuItem,
             this.CurrencyToolStripMenuItem,
-            this.CategoryToolStripMenuItem,
-            this.ProductToolStripMenuItem});
-            this.EntryToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("EntryToolStripMenuItem.Image")));
+            this.CategoryToolStripMenuItem});
+            resources.ApplyResources(this.EntryToolStripMenuItem, "EntryToolStripMenuItem");
             this.EntryToolStripMenuItem.Name = "EntryToolStripMenuItem";
-            this.EntryToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
-            this.EntryToolStripMenuItem.Text = "Entry";
             // 
             // RestaurantInfoToolStripMenuItem
             // 
             this.RestaurantInfoToolStripMenuItem.Name = "RestaurantInfoToolStripMenuItem";
-            this.RestaurantInfoToolStripMenuItem.Size = new System.Drawing.Size(178, 24);
-            this.RestaurantInfoToolStripMenuItem.Text = "Restaurant Info";
+            resources.ApplyResources(this.RestaurantInfoToolStripMenuItem, "RestaurantInfoToolStripMenuItem");
             this.RestaurantInfoToolStripMenuItem.Click += new System.EventHandler(this.RestaurantInfoToolStripMenuItem_Click);
             // 
             // CurrencyToolStripMenuItem
             // 
             this.CurrencyToolStripMenuItem.Name = "CurrencyToolStripMenuItem";
-            this.CurrencyToolStripMenuItem.Size = new System.Drawing.Size(178, 24);
-            this.CurrencyToolStripMenuItem.Text = "Currency";
+            resources.ApplyResources(this.CurrencyToolStripMenuItem, "CurrencyToolStripMenuItem");
             this.CurrencyToolStripMenuItem.Click += new System.EventHandler(this.CurrencyToolStripMenuItem_Click);
             // 
             // CategoryToolStripMenuItem
             // 
             this.CategoryToolStripMenuItem.Name = "CategoryToolStripMenuItem";
-            this.CategoryToolStripMenuItem.Size = new System.Drawing.Size(178, 24);
-            this.CategoryToolStripMenuItem.Text = "Category";
+            resources.ApplyResources(this.CategoryToolStripMenuItem, "CategoryToolStripMenuItem");
             this.CategoryToolStripMenuItem.Click += new System.EventHandler(this.CategoryToolStripMenuItem_Click);
-            // 
-            // ProductToolStripMenuItem
-            // 
-            this.ProductToolStripMenuItem.Name = "ProductToolStripMenuItem";
-            this.ProductToolStripMenuItem.Size = new System.Drawing.Size(178, 24);
-            this.ProductToolStripMenuItem.Text = "Items";
-            this.ProductToolStripMenuItem.Click += new System.EventHandler(this.ProductToolStripMenuItem_Click);
             // 
             // UserToolStripMenuItem
             // 
@@ -112,111 +95,89 @@ namespace EProject
             this.logoutToolStripMenuItem,
             this.toolStripMenuItem3,
             this.toolStripMenuItem4});
-            this.UserToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("UserToolStripMenuItem.Image")));
+            resources.ApplyResources(this.UserToolStripMenuItem, "UserToolStripMenuItem");
             this.UserToolStripMenuItem.Name = "UserToolStripMenuItem";
-            this.UserToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
-            this.UserToolStripMenuItem.Text = "User";
             this.UserToolStripMenuItem.Click += new System.EventHandler(this.UserToolStripMenuItem_Click);
             // 
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.loginToolStripMenuItem.Text = "Login";
+            resources.ApplyResources(this.loginToolStripMenuItem, "loginToolStripMenuItem");
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
+            resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
             // 
             // logoutToolStripMenuItem
             // 
-            this.logoutToolStripMenuItem.Enabled = false;
+            resources.ApplyResources(this.logoutToolStripMenuItem, "logoutToolStripMenuItem");
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click_1);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            resources.ApplyResources(this.toolStripMenuItem3, "toolStripMenuItem3");
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            resources.ApplyResources(this.toolStripMenuItem4, "toolStripMenuItem4");
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // CustomerToolStripMenuItem
             // 
-            this.CustomerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("CustomerToolStripMenuItem.Image")));
+            resources.ApplyResources(this.CustomerToolStripMenuItem, "CustomerToolStripMenuItem");
             this.CustomerToolStripMenuItem.Name = "CustomerToolStripMenuItem";
-            this.CustomerToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
-            this.CustomerToolStripMenuItem.Text = "Customers";
             this.CustomerToolStripMenuItem.Click += new System.EventHandler(this.CustomerToolStripMenuItem_Click);
             // 
             // BilingToolStripMenuItem
             // 
-            this.BilingToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("BilingToolStripMenuItem.Image")));
+            resources.ApplyResources(this.BilingToolStripMenuItem, "BilingToolStripMenuItem");
             this.BilingToolStripMenuItem.Name = "BilingToolStripMenuItem";
-            this.BilingToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
-            this.BilingToolStripMenuItem.Text = "Biling";
+            this.BilingToolStripMenuItem.Click += new System.EventHandler(this.BilingToolStripMenuItem_Click);
             // 
             // ReportsToolStripMenuItem
             // 
-            this.ReportsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ReportsToolStripMenuItem.Image")));
+            resources.ApplyResources(this.ReportsToolStripMenuItem, "ReportsToolStripMenuItem");
             this.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem";
-            this.ReportsToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
-            this.ReportsToolStripMenuItem.Text = "Reports";
             // 
             // ToolsToolStripMenuItem
             // 
             this.ToolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.CalculatorToolStripMenuItem,
             this.NotepadToolStripMenuItem});
-            this.ToolsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ToolsToolStripMenuItem.Image")));
+            resources.ApplyResources(this.ToolsToolStripMenuItem, "ToolsToolStripMenuItem");
             this.ToolsToolStripMenuItem.Name = "ToolsToolStripMenuItem";
-            this.ToolsToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
-            this.ToolsToolStripMenuItem.Text = "Tools";
             // 
             // CalculatorToolStripMenuItem
             // 
             this.CalculatorToolStripMenuItem.Name = "CalculatorToolStripMenuItem";
-            this.CalculatorToolStripMenuItem.Size = new System.Drawing.Size(145, 24);
-            this.CalculatorToolStripMenuItem.Text = "Calculator";
+            resources.ApplyResources(this.CalculatorToolStripMenuItem, "CalculatorToolStripMenuItem");
             this.CalculatorToolStripMenuItem.Click += new System.EventHandler(this.CalculatorToolStripMenuItem_Click);
             // 
             // NotepadToolStripMenuItem
             // 
             this.NotepadToolStripMenuItem.Name = "NotepadToolStripMenuItem";
-            this.NotepadToolStripMenuItem.Size = new System.Drawing.Size(145, 24);
-            this.NotepadToolStripMenuItem.Text = "Notepad";
+            resources.ApplyResources(this.NotepadToolStripMenuItem, "NotepadToolStripMenuItem");
             this.NotepadToolStripMenuItem.Click += new System.EventHandler(this.NotepadToolStripMenuItem_Click);
             // 
             // ExitToolStripMenuItem
             // 
-            this.ExitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ExitToolStripMenuItem.Image")));
+            resources.ApplyResources(this.ExitToolStripMenuItem, "ExitToolStripMenuItem");
             this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
-            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
-            this.ExitToolStripMenuItem.Text = "Exit";
             this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(177, 6);
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 24);
-            this.toolStripMenuItem4.Text = "Users Record";
-            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // Mainform
             // 
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1028, 574);
+            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.MenuStrip1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.MenuStrip1;
             this.Name = "Mainform";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Main Restaurant Form";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Mainform_Load);
             this.MenuStrip1.ResumeLayout(false);
@@ -262,6 +223,7 @@ namespace EProject
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+
         }
 
         private void UserToolStripMenuItem_Click(object sender, EventArgs e)
@@ -335,6 +297,13 @@ namespace EProject
             UsersRecord u = new UsersRecord();
             u.MdiParent = this;
             u.Show();
+        }
+
+        private void BilingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            item ca = new item();
+            ca.MdiParent = this;
+            ca.Show();
         }
     }
 }

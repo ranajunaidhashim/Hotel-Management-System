@@ -44,6 +44,7 @@ namespace EProject
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtcmb = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Label2
@@ -138,6 +139,18 @@ namespace EProject
             this.txtcmb.Size = new System.Drawing.Size(166, 23);
             this.txtcmb.TabIndex = 8;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.LightBlue;
+            this.label7.Location = new System.Drawing.Point(329, 30);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(317, 42);
+            this.label7.TabIndex = 32;
+            this.label7.Text = "🔒 User Auth 🔐";
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,6 +158,7 @@ namespace EProject
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1028, 609);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtcmb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
@@ -168,5 +182,6 @@ namespace EProject
         internal Button button1;
         internal Label label3;
         private ComboBox txtcmb;
+        private Label label7;
     }
 }

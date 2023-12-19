@@ -49,7 +49,6 @@ namespace EProject
             this.txte = new System.Windows.Forms.TextBox();
             this.Button2 = new System.Windows.Forms.Button();
             this.Button3 = new System.Windows.Forms.Button();
-            this.Label8 = new System.Windows.Forms.Label();
             this.Button4 = new System.Windows.Forms.Button();
             this.Button5 = new System.Windows.Forms.Button();
             this.txtcn = new System.Windows.Forms.TextBox();
@@ -57,6 +56,7 @@ namespace EProject
             this.Label7 = new System.Windows.Forms.Label();
             this.txtnotes = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -196,18 +196,6 @@ namespace EProject
             this.Button3.UseVisualStyleBackColor = true;
             this.Button3.Click += new System.EventHandler(this.Button3_Click);
             // 
-            // Label8
-            // 
-            this.Label8.AutoSize = true;
-            this.Label8.BackColor = System.Drawing.Color.Transparent;
-            this.Label8.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label8.ForeColor = System.Drawing.Color.Black;
-            this.Label8.Location = new System.Drawing.Point(387, 24);
-            this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(227, 39);
-            this.Label8.TabIndex = 20;
-            this.Label8.Text = "Customers Info.";
-            // 
             // Button4
             // 
             this.Button4.ForeColor = System.Drawing.Color.Maroon;
@@ -275,6 +263,18 @@ namespace EProject
             this.dataGridView1.Size = new System.Drawing.Size(705, 148);
             this.dataGridView1.TabIndex = 24;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Verdana", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label9.Location = new System.Drawing.Point(301, 24);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(395, 35);
+            this.label9.TabIndex = 32;
+            this.label9.Text = "Customers Information";
+            // 
             // Customers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,11 +282,11 @@ namespace EProject
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1028, 577);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dtpcs);
             this.Controls.Add(this.Button5);
             this.Controls.Add(this.Button4);
-            this.Controls.Add(this.Label8);
             this.Controls.Add(this.Button3);
             this.Controls.Add(this.Button2);
             this.Controls.Add(this.txtnotes);
@@ -327,7 +327,6 @@ namespace EProject
         internal TextBox txte;
         internal Button Button2;
         internal Button Button3;
-        internal Label Label8;
         internal Button Button4;
         internal Button Button5;
         internal TextBox txtcn;
@@ -335,5 +334,6 @@ namespace EProject
         internal Label Label7;
         internal TextBox txtnotes;
         private DataGridView dataGridView1;
+        private Label label9;
     }
 }

@@ -10,7 +10,6 @@ namespace EProject
         internal ToolStripMenuItem BilingToolStripMenuItem;
         internal ToolStripMenuItem CustomerToolStripMenuItem;
         internal ToolStripMenuItem UserToolStripMenuItem;
-        internal ToolStripMenuItem ProductToolStripMenuItem;
         internal ToolStripMenuItem CategoryToolStripMenuItem;
         internal ToolStripMenuItem CurrencyToolStripMenuItem;
         internal ToolStripMenuItem RestaurantInfoToolStripMenuItem;

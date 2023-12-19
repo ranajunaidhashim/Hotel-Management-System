@@ -36,7 +36,6 @@ namespace EProject
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Restaurantinfo));
-            this.Label1 = new System.Windows.Forms.Label();
             this.Button2 = new System.Windows.Forms.Button();
             this.Button3 = new System.Windows.Forms.Button();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
@@ -57,19 +56,10 @@ namespace EProject
             this.btnupdate = new System.Windows.Forms.Button();
             this.btnsearch = new System.Windows.Forms.Button();
             this.Btndel = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Label1
-            // 
-            this.Label1.AutoSize = true;
-            this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label1.Location = new System.Drawing.Point(22, 18);
-            this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(127, 25);
-            this.Label1.TabIndex = 0;
-            this.Label1.Text = "Restaurant";
             // 
             // Button2
             // 
@@ -281,18 +271,29 @@ namespace EProject
             this.Btndel.UseVisualStyleBackColor = true;
             this.Btndel.Click += new System.EventHandler(this.Btndel_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Verdana", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label7.Location = new System.Drawing.Point(273, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(401, 35);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Restaurant Information";
+            // 
             // Restaurantinfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(956, 592);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.Btndel);
             this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.btnupdate);
             this.Controls.Add(this.GroupBox1);
             this.Controls.Add(this.Button3);
             this.Controls.Add(this.Button2);
-            this.Controls.Add(this.Label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Restaurantinfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -304,7 +305,6 @@ namespace EProject
             this.PerformLayout();
 
         }
-        internal Label Label1;
         internal Button Button2;
         internal Button Button3;
         internal GroupBox GroupBox1;
@@ -325,5 +325,6 @@ namespace EProject
         internal Button btnchose;
         internal TextBox txtId;
         internal Label label6;
+        private Label label7;
     }
 }
